@@ -54,6 +54,7 @@
     ./plug/utils/undotree.nix
     ./plug/utils/ufo.nix
     ./plug/utils/whichkey.nix
+    ./plug/utils/nvim.spectre.nix
   ];
   options = {
     theme = lib.mkOption {
