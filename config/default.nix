@@ -11,6 +11,8 @@
     ./plug/colorscheme/biscuit.nix
     ./plug/colorscheme/colorscheme.nix
 
+    ./plug/filetrees/neo-tree.nix
+
     ./plug/completion/cmp.nix
     ./plug/completion/copilot-cmp.nix
     ./plug/completion/lspkind.nix
@@ -54,6 +56,7 @@
     ./plug/utils/undotree.nix
     ./plug/utils/ufo.nix
     ./plug/utils/whichkey.nix
+    ./plug/utils/undotree.nix
   ];
   options = {
     theme = lib.mkOption {
