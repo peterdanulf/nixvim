@@ -5,6 +5,22 @@
     # General maps
     {
       mode = "n";
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<CR>";
+      options = {
+        desc = "Explorer NeoTree (Root Dir)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ge";
+      action = "<cmd>Neotree git_status<CR>";
+      options = {
+        desc = "Git Explorer";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>f";
       action = "+find/file";
     }
