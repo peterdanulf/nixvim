@@ -1,6 +1,7 @@
 {
   config,
   lib,
+  pkgs,
   ...
 }: {
   imports = [
@@ -67,6 +68,9 @@
   };
   config = {
     theme = "paradise";
+    extraPlugins = with pkgs.vimPlugins; [
+      nvim-spectre
+    ];
     extraConfigLua = ''
       _G.theme = "${config.theme}"
     '';
