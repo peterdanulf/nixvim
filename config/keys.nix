@@ -5,10 +5,98 @@
     # General maps
     {
       mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>Telescope find_files<cr>";
+      options = {
+        desc = "Find Files";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>sR";
+      action = "<cmd>Telescope resume<cr>";
+      options = {
+        desc = "Resume";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>sr";
+      action = ":Spectre<cr>";
+      options = {
+        desc = "Replace in Files (Spectre)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>/";
+      action = "<cmd>Telescope live_grep<cr>";
+      options = {
+        desc = "Live Grep";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ss";
+      action = "<cmd>Telescope symbols<cr>";
+      options = {
+        desc = "Symbols";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>cc";
+      action = ":CopilotChat<cr>";
+      options = {
+        desc = "Copilot Chat";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>,";
+      action = "<cmd>Telescope buffers<cr>";
+      options = {
+        desc = "Buffers";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>fr";
+      action = "<cmd>Telescope oldfiles<cr>";
+      options = {
+        desc = "Recent Files";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>fg";
+      action = "<cmd>Telescope git_files<cr>";
+      options = {
+        desc = "Git Files";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader><leader>";
+      action = "<cmd>Telescope file_browser<cr>";
+      options = {
+        desc = "File Browser";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>e";
       action = "<cmd>Neotree toggle<CR>";
       options = {
         desc = "Explorer NeoTree (Root Dir)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>rs";
+      action = ":source ~/.config/nvim/session.vim<cr>";
+      options = {
+        desc = "Restore session";
       };
     }
     {
@@ -190,7 +278,15 @@
         desc = "Save file";
       };
     }
-
+    {
+      mode = "n";
+      key = "<C-l>";
+      action = ":noh<cr>";
+      options = {
+        silent = true;
+        desc = "Clear search highlight";
+      };
+    }
     # Quit/Session
     {
       mode = "n";
@@ -330,69 +426,6 @@
       key = "<leader>zz";
       action = "<CMD> ZenMode | Pencil<CR>";
       options = {desc = "Toggle writting mode";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>m";
-      action = "<CMD> Grapple toggle <CR>";
-      options = {desc = "Grapple Toggle tag";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>k";
-      action = "<CMD> Grapple toggle_tags <CR>";
-      options = {desc = "Grapple Toggle tag";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>K";
-      action = "<CMD> Grapple toggle_scopes <CR>";
-      options = {desc = "Grapple Toggle scopes";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>j";
-      action = "<CMD> Grapple cycle forward <CR>";
-      options = {desc = "Grapple Cycle forward";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>J";
-      action = "<CMD> Grapple cycle backward <CR>";
-      options = {desc = "Grapple Cycle backward";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>1";
-      action = "<CMD> Grapple select index=1<CR>";
-      options = {desc = "Grapple Select 1";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>2";
-      action = "<CMD> Grapple select index=2<CR>";
-      options = {desc = "Grapple Select 2";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>3";
-      action = "<CMD> Grapple select index=3<CR>";
-      options = {desc = "Grapple Select 3";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>4";
-      action = "<CMD> Grapple select index=4<CR>";
-      options = {desc = "Grapple Select 4";};
     }
   ];
   extraConfigLua = ''
