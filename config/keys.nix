@@ -5,35 +5,35 @@
     # General maps
     {
       mode = "n";
-      key = "<leader>m";
+      key = "<leader>mm";
       action = "<CMD> Grapple toggle <CR>";
       options = {desc = "Grapple Toggle tag";};
     }
 
     {
       mode = "n";
-      key = "<leader>k";
+      key = "<leader>mt";
       action = "<CMD> Grapple toggle_tags <CR>";
       options = {desc = "Grapple Toggle tag";};
     }
 
     {
       mode = "n";
-      key = "<leader>K";
+      key = "<leader>ms";
       action = "<CMD> Grapple toggle_scopes <CR>";
       options = {desc = "Grapple Toggle scopes";};
     }
 
     {
       mode = "n";
-      key = "<leader>j";
+      key = "<leader>mj";
       action = "<CMD> Grapple cycle forward <CR>";
       options = {desc = "Grapple Cycle forward";};
     }
 
     {
       mode = "n";
-      key = "<leader>J";
+      key = "<leader>mJ";
       action = "<CMD> Grapple cycle backward <CR>";
       options = {desc = "Grapple Cycle backward";};
     }
@@ -64,14 +64,6 @@
       key = "<leader>4";
       action = "<CMD> Grapple select index=4<CR>";
       options = {desc = "Grapple Select 4";};
-    }
-    {
-      mode = "n";
-      key = "<leader>fb";
-      action = "<cmd>Telescope file_browser<cr>";
-      options = {
-        desc = "Find Browser";
-      };
     }
     {
       mode = "n";
