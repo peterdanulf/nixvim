@@ -47,6 +47,24 @@
     }
     {
       mode = "n";
+      key = "<leader>]";
+      action = ":Gitsigns next_hunk<CR>";
+      options = {
+        silent = true;
+        desc = "Next Hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>[";
+      action = ":Gitsigns prev_hunk<CR>";
+      options = {
+        silent = true;
+        desc = "Prev Hunk";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>ghd";
       action = ":Gitsigns diffthis<CR>";
       options = {
