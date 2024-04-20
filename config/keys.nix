@@ -67,10 +67,10 @@
     }
     {
       mode = "n";
-      key = "<leader>ff";
-      action = "<cmd>Telescope find_files<cr>";
+      key = "<leader>fb";
+      action = "<cmd>Telescope file_browser<cr>";
       options = {
-        desc = "Find Files";
+        desc = "Find Browser";
       };
     }
     {
@@ -140,9 +140,9 @@
     {
       mode = "n";
       key = "<leader><leader>";
-      action = "<cmd>Telescope file_browser<cr>";
+      action = "<cmd>Telescope fd<cr>";
       options = {
-        desc = "File Browser";
+        desc = "Find Files";
       };
     }
     {
