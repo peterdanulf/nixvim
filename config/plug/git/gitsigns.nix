@@ -47,7 +47,7 @@
     }
     {
       mode = "n";
-      key = "<leader>]";
+      key = "]";
       action = ":Gitsigns next_hunk<CR>";
       options = {
         silent = true;
@@ -56,7 +56,7 @@
     }
     {
       mode = "n";
-      key = "<leader>[";
+      key = "[";
       action = ":Gitsigns prev_hunk<CR>";
       options = {
         silent = true;
