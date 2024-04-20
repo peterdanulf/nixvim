@@ -91,7 +91,7 @@
     }
     {
       mode = "n";
-      key = "<leader>ss";
+      key = "<leader>fs";
       action = "<cmd>Telescope symbols<cr>";
       options = {
         desc = "Symbols";
