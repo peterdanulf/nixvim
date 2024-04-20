@@ -14,7 +14,7 @@
       mode = "n";
       key = "<leader>mt";
       action = "<CMD> Grapple toggle_tags <CR>";
-      options = {desc = "Grapple Toggle tag";};
+      options = {desc = "Grapple Toggle tags";};
     }
 
     {
@@ -67,7 +67,7 @@
     }
     {
       mode = "n";
-      key = "<leader>sR";
+      key = "<leader>fr";
       action = "<cmd>Telescope resume<cr>";
       options = {
         desc = "Resume";
@@ -115,10 +115,10 @@
     }
     {
       mode = "n";
-      key = "<leader>fr";
+      key = "<leader>fo";
       action = "<cmd>Telescope oldfiles<cr>";
       options = {
-        desc = "Recent Files";
+        desc = "Old Files";
       };
     }
     {
