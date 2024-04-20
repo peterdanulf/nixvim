@@ -58,7 +58,8 @@
     ./plug/utils/ufo.nix
     ./plug/utils/whichkey.nix
     ./plug/utils/undotree.nix
-    ./plug/utils/mini.nix
+    ./plug/utils/surround.nix
+    #./plug/utils/mini.nix
   ];
   options = {
     theme = lib.mkOption {
