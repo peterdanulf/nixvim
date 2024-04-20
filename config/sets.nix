@@ -72,8 +72,8 @@
       # Place a column line
       # colorcolumn = "80";
 
-      # Reduce timeout to 1000ms
-      timeoutlen = 1000;
+      # Reduce timeout to 200ms
+      timeoutlen = 200;
 
       # Set encoding type
       encoding = "utf-8";
