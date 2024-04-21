@@ -165,7 +165,7 @@
     {
       mode = "n";
       key = "<leader>ge";
-      action = "<cmd>Neotree git_status<CR>";
+      action = "<cmd>Neotree float git_status<CR>";
       options = {
         desc = "Git Explorer";
       };
