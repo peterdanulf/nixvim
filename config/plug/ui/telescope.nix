@@ -136,7 +136,7 @@
       key = "<leader>fe";
       action = "<cmd>Telescope file_browser<cr>";
       options = {
-        desc = "File browser";
+        desc = "File browser (Root Dir)";
       };
     }
     {
@@ -144,7 +144,7 @@
       key = "<leader>fE";
       action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>";
       options = {
-        desc = "File browser";
+        desc = "File browser (cwd)";
       };
     }
   ];
