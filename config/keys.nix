@@ -101,9 +101,17 @@
     {
       mode = "n";
       key = "<leader>fs";
-      action = "<cmd>Telescope symbols<cr>";
+      action = "<cmd>Telescope lsp_document_symbols<cr>";
       options = {
-        desc = "Symbols";
+        desc = "Document Symbols";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>fS";
+      action = "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>";
+      options = {
+        desc = "Workspace Symbols";
       };
     }
     {
