@@ -73,6 +73,7 @@
     theme = "paradise";
     extraPlugins = with pkgs.vimPlugins; [
       nvim-spectre
+      vim-startuptime
     ];
     extraConfigLua = ''
       _G.theme = "${config.theme}"
