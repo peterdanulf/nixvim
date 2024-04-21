@@ -140,14 +140,6 @@
     }
     {
       mode = "n";
-      key = "<leader>fg";
-      action = "<cmd>Telescope git_files<cr>";
-      options = {
-        desc = "Git Files";
-      };
-    }
-    {
-      mode = "n";
       key = "<leader><leader>";
       action = "<cmd>Telescope fd<cr>";
       options = {
@@ -172,10 +164,10 @@
     }
     {
       mode = "n";
-      key = "<leader>ge";
-      action = "<cmd>Telescope git_statusCR>";
+      key = "<leader>fg";
+      action = "<cmd>Telescope git_files<cr>";
       options = {
-        desc = "Git Explorer";
+        desc = "Git Files";
       };
     }
     {
