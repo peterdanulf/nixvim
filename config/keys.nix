@@ -4,6 +4,15 @@
   keymaps = [
     # General maps
     {
+      mode = "i";
+      key = "jk";
+      action = "<ESC>";
+      options = {
+        silent = true;
+        desc = "jk to escape";
+      };
+    }
+    {
       mode = "n";
       key = "<leader>mm";
       action = "<CMD> Grapple toggle <CR>";
