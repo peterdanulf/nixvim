@@ -59,6 +59,7 @@
     ./plug/utils/whichkey.nix
     ./plug/utils/undotree.nix
     ./plug/utils/surround.nix
+    ./plug/utils/commentary.nix
     #./plug/utils/mini.nix
   ];
   options = {
