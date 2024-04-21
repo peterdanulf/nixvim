@@ -173,7 +173,7 @@
     {
       mode = "n";
       key = "<leader>ge";
-      action = "<cmd>Neotree float git_status<CR>";
+      action = "<cmd>Telescope git_statusCR>";
       options = {
         desc = "Git Explorer";
       };
