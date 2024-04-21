@@ -164,10 +164,18 @@
     }
     {
       mode = "n";
+      key = "<leader>ge";
+      action = "<cmd>Telescope git_status<cr>";
+      options = {
+        desc = "Git Explorer";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>fg";
       action = "<cmd>Telescope git_files<cr>";
       options = {
-        desc = "Git Files";
+        desc = "Find Files (git files)";
       };
     }
     {
