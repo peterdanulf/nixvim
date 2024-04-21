@@ -47,7 +47,7 @@
     }
     {
       mode = "n";
-      key = "]";
+      key = "]h";
       action = ":Gitsigns next_hunk<CR>";
       options = {
         silent = true;
@@ -56,11 +56,47 @@
     }
     {
       mode = "n";
-      key = "[";
+      key = "[h";
       action = ":Gitsigns prev_hunk<CR>";
       options = {
         silent = true;
         desc = "Prev Hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "]w";
+      action = ":Gitsigns next_warning<CR>";
+      options = {
+        silent = true;
+        desc = "Next Warning";
+      };
+    }
+    {
+      mode = "n";
+      key = "[w";
+      action = ":Gitsigns prev_warning<CR>";
+      options = {
+        silent = true;
+        desc = "Prev Warning";
+      };
+    }
+    {
+      mode = "n";
+      key = "]e";
+      action = ":Gitsigns next_error<CR>";
+      options = {
+        silent = true;
+        desc = "Next Error";
+      };
+    }
+    {
+      mode = "n";
+      key = "[e";
+      action = ":Gitsigns prev_error<CR>";
+      options = {
+        silent = true;
+        desc = "Prev Error";
       };
     }
     {
