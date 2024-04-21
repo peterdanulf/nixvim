@@ -65,42 +65,6 @@
     }
     {
       mode = "n";
-      key = "]w";
-      action = ":Gitsigns next_warning<CR>";
-      options = {
-        silent = true;
-        desc = "Next Warning";
-      };
-    }
-    {
-      mode = "n";
-      key = "[w";
-      action = ":Gitsigns prev_warning<CR>";
-      options = {
-        silent = true;
-        desc = "Prev Warning";
-      };
-    }
-    {
-      mode = "n";
-      key = "]e";
-      action = ":Gitsigns next_error<CR>";
-      options = {
-        silent = true;
-        desc = "Next Error";
-      };
-    }
-    {
-      mode = "n";
-      key = "[e";
-      action = ":Gitsigns prev_error<CR>";
-      options = {
-        silent = true;
-        desc = "Prev Error";
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>ghd";
       action = ":Gitsigns diffthis<CR>";
       options = {
