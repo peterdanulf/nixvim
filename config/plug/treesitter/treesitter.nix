@@ -20,6 +20,14 @@ in {
     languageRegister.nu = "nu";
     languageRegister.liq = "liquidsoap";
     nixvimInjections = true;
+    incrementalSelection = {
+      enable = true;
+      keymaps = {
+        initSelection = "<C-Space>";
+        nodeIncremental = "<C-Space>";
+        nodeDecremental = "<bs>";
+      };
+    };
     grammarPackages =
       [
         nu-grammar
