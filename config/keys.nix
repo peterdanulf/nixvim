@@ -495,7 +495,7 @@
     {
       mode = "n";
       key = "<leader>zz";
-      action = "<CMD>ZenMode | Pencil<CR>";
+      action = "<CMD>ZenMode<CR>";
       options = {desc = "Toggle writting mode";};
     }
   ];
