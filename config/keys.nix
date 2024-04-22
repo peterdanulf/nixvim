@@ -4,6 +4,48 @@
   keymaps = [
     # General maps
     {
+      mode = "n";
+      key = "<leader>z";
+      action = "+zen";
+    }
+    {
+      mode = "n";
+      key = "<leader>x";
+      action = "+trouble";
+    }
+    {
+      mode = "n";
+      key = "<leader>xL";
+      action = "<CMD>TroubleToggle loclist<CR>";
+      options = {
+        desc = "Location list (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>xQ";
+      action = "<CMD>TroubleToggle quickfix<CR>";
+      options = {
+        desc = "Quickfix List (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>xx";
+      action = "<CMD>TroubleToggle document_diagnostics<CR>";
+      options = {
+        desc = "Document Diagnostics (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>xX";
+      action = "<CMD>TroubleToggle workspace_diagnostics<CR>";
+      options = {
+        desc = "Workspace Diagnostics (Trouble)";
+      };
+    }
+    {
       mode = "i";
       key = "jk";
       action = "<ESC>";
@@ -156,14 +198,6 @@
     }
     {
       mode = "n";
-      key = "<leader>rs";
-      action = ":source ~/.config/nvim/session.vim<cr>";
-      options = {
-        desc = "Restore session";
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>ge";
       action = "<cmd>Telescope git_status<cr>";
       options = {
@@ -230,12 +264,6 @@
       mode = ["n" "v"];
       key = "<leader>c";
       action = "+code";
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>t";
-      action = "+test";
     }
 
     # Tabs
