@@ -5,6 +5,16 @@
     # General maps
     {
       mode = "n";
+      key = "<leader>b";
+      action = "+buffers";
+    }
+    {
+      mode = "n";
+      key = "<leader>t";
+      action = "+tagging";
+    }
+    {
+      mode = "n";
       key = "<leader>z";
       action = "+zen";
     }
@@ -56,35 +66,35 @@
     }
     {
       mode = "n";
-      key = "<leader>mm";
+      key = "<leader>tt";
       action = "<CMD> Grapple toggle <CR>";
       options = {desc = "Grapple Toggle tag";};
     }
 
     {
       mode = "n";
-      key = "<leader>mt";
+      key = "<leader>tT";
       action = "<CMD> Grapple toggle_tags <CR>";
       options = {desc = "Grapple Toggle tags";};
     }
 
     {
       mode = "n";
-      key = "<leader>ms";
+      key = "<leader>ts";
       action = "<CMD> Grapple toggle_scopes <CR>";
       options = {desc = "Grapple Toggle scopes";};
     }
 
     {
       mode = "n";
-      key = "<leader>mj";
+      key = "<leader>tj";
       action = "<CMD> Grapple cycle forward <CR>";
       options = {desc = "Grapple Cycle forward";};
     }
 
     {
       mode = "n";
-      key = "<leader>mJ";
+      key = "<leader>tJ";
       action = "<CMD> Grapple cycle backward <CR>";
       options = {desc = "Grapple Cycle backward";};
     }
