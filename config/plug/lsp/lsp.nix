@@ -5,6 +5,7 @@
       enable = true;
       servers = {
         html = {enable = true;};
+        elmls = {enable = true;};
         lua-ls = {enable = true;};
         nil_ls = {enable = true;};
         marksman = {enable = true;};
