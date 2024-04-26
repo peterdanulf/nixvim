@@ -389,7 +389,7 @@
     }
     {
       mode = "n";
-      key = "<C-l>";
+      key = "<Esc>";
       action = ":noh<cr>";
       options = {
         silent = true;
