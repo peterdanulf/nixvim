@@ -5,6 +5,16 @@
     # General maps
     {
       mode = "n";
+      key = "<leader>-";
+      action = "<cmd>Split window below<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader>|";
+      action = "<cmd>Split window right<cr>";
+    }
+    {
+      mode = "n";
       key = "<leader>b";
       action = "+buffers";
     }
