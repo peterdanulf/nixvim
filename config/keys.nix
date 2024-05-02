@@ -569,5 +569,13 @@
             function ToggleWrap()
             vim.wo.wrap = not vim.wo.wrap
             end
+
+    local isLspDiagnosticsVisible = true
+    vim.keymap.set("n", "<leader>cx", function()
+        isLspDiagnosticsVisible = not isLspDiagnosticsVisible
+        vim.diagnostic.config({
+            virtual_text = isLspDiagnosticsVisible,
+            underline = isLspDiagnosticsVisible
+        }) end, {desc = "Toggle LSP Diagnostics"})
   '';
 }
