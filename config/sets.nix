@@ -84,6 +84,9 @@
 
       # We don't need to see things like INSERT anymore
       showmode = false;
+
+      # Sync the system clipboard with the vim clipboard
+      clipboard = "unnamedplus";
     };
   };
 }
