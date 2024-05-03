@@ -6,12 +6,18 @@
     {
       mode = "n";
       key = "<leader>-";
-      action = "<cmd>Split window below<cr>";
+      action = "<C-W>s";
+      options = {
+        desc = "Split window below";
+      };
     }
     {
       mode = "n";
       key = "<leader>|";
-      action = "<cmd>Split window right<cr>";
+      action = "<C-W>v";
+      options = {
+        desc = "Split window right";
+      };
     }
     {
       mode = "n";
