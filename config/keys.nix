@@ -181,6 +181,14 @@
     }
     {
       mode = "n";
+      key = "<leader>fS";
+      action = "<cmd>Telescope lsp_workspace_symbols<cr>";
+      options = {
+        desc = "Workspace Symbols";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cc";
       action = ":CopilotChat<cr>";
       options = {
