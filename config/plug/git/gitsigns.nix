@@ -83,6 +83,15 @@
     }
     {
       mode = "n";
+      key = "<leader>ghp";
+      action = ":Gitsigns preview_hunk<CR>";
+      options = {
+        silent = true;
+        desc = "Preview Hunk";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>ghr";
       action = ":Gitsigns reset_hunk<CR>";
       options = {

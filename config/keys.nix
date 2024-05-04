@@ -157,7 +157,7 @@
     }
     {
       mode = "n";
-      key = "<leader>sr";
+      key = "<leader>s";
       action = ":Spectre<cr>";
       options = {
         desc = "Replace in Files (Spectre)";
@@ -177,14 +177,6 @@
       action = "<cmd>Telescope lsp_document_symbols<cr>";
       options = {
         desc = "Document Symbols";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>fS";
-      action = "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>";
-      options = {
-        desc = "Workspace Symbols";
       };
     }
     {
@@ -230,7 +222,7 @@
     {
       mode = "n";
       key = "<leader>E";
-      action = "<cmd>NeoTree reveal_force_cwd<CR>";
+      action = "<cmd>Neotree reveal_force_cwd<CR>";
       options = {
         desc = "Explorer NeoTree (cwd)";
       };
@@ -255,12 +247,6 @@
       mode = "n";
       key = "<leader>f";
       action = "+find/file";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>s";
-      action = "+search";
     }
 
     {
