@@ -36,12 +36,17 @@
     }
     {
       mode = "n";
-      key = "<leader>x";
-      action = "+trouble";
+      key = "<leader>d";
+      action = "+diagnostics";
     }
     {
       mode = "n";
-      key = "<leader>xL";
+      key = "<leader>dd";
+      action = "<cmd>Telescope diagnostics<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>dL";
       action = "<CMD>TroubleToggle loclist<CR>";
       options = {
         desc = "Location list (Trouble)";
@@ -49,7 +54,7 @@
     }
     {
       mode = "n";
-      key = "<leader>xQ";
+      key = "<leader>dQ";
       action = "<CMD>TroubleToggle quickfix<CR>";
       options = {
         desc = "Quickfix List (Trouble)";
@@ -57,7 +62,7 @@
     }
     {
       mode = "n";
-      key = "<leader>xx";
+      key = "<leader>dx";
       action = "<CMD>TroubleToggle document_diagnostics<CR>";
       options = {
         desc = "Document Diagnostics (Trouble)";
@@ -65,7 +70,7 @@
     }
     {
       mode = "n";
-      key = "<leader>xX";
+      key = "<leader>dX";
       action = "<CMD>TroubleToggle workspace_diagnostics<CR>";
       options = {
         desc = "Workspace Diagnostics (Trouble)";
@@ -211,7 +216,7 @@
       key = "<leader><leader>";
       action = "<cmd>Telescope fd<cr>";
       options = {
-        desc = "Find Files";
+        desc = "Find Files (root dir)";
       };
     }
     {
@@ -220,6 +225,14 @@
       action = "<cmd>Neotree toggle<CR>";
       options = {
         desc = "Explorer NeoTree (Root Dir)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>E";
+      action = "<cmd>NeoTree reveal_force_cwd<CR>";
+      options = {
+        desc = "Explorer NeoTree (cwd)";
       };
     }
     {
@@ -278,12 +291,6 @@
       mode = "n";
       key = "<leader><Tab>";
       action = "+tab";
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>d";
-      action = "+debug";
     }
 
     {
@@ -514,21 +521,6 @@
       key = "<leader>p";
       action = ''"_dP'';
       options = {desc = "Deletes to void register and paste over";};
-    }
-
-    # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
-    {
-      mode = ["n" "v"];
-      key = "<leader>y";
-      action = ''"+y'';
-      options = {desc = "Copy to system clipboard";};
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>Y";
-      action = ''"+Y'';
-      options = {desc = "Copy to system clipboard";};
     }
 
     # Delete to void register
