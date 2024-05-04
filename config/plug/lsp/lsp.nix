@@ -4,6 +4,7 @@
     lsp = {
       enable = true;
       servers = {
+        biome = {enable = true;};
         html = {enable = true;};
         elmls = {enable = true;};
         lua-ls = {enable = true;};
