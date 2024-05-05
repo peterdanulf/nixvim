@@ -149,18 +149,39 @@
     }
     {
       mode = "n";
-      key = "<leader>fr";
-      action = "<cmd>Telescope resume<cr>";
+      key = "<leader>s";
+      action = "+search";
+    }
+    {
+      mode = "n";
+      key = "<leader>sr";
+      action = ":Spectre<cr>";
       options = {
-        desc = "Resume";
+        desc = "Replace in Files (Spectre)";
       };
     }
     {
       mode = "n";
-      key = "<leader>s";
-      action = ":Spectre<cr>";
+      key = "<leader>ss";
+      action = "<cmd>Telescope lsp_document_symbols<cr>";
       options = {
-        desc = "Replace in Files (Spectre)";
+        desc = "Goto symbol";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>sS";
+      action = "<cmd>Telescope lsp_workspace_symbols<cr>";
+      options = {
+        desc = "Goto symbol (Workspace)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>sR";
+      action = "<cmd>Telescope resume<cr>";
+      options = {
+        desc = "Resume";
       };
     }
     {
@@ -169,22 +190,6 @@
       action = "<cmd>Telescope live_grep<cr>";
       options = {
         desc = "Live Grep";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>fs";
-      action = "<cmd>Telescope lsp_document_symbols<cr>";
-      options = {
-        desc = "Document Symbols";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>fS";
-      action = "<cmd>Telescope lsp_workspace_symbols<cr>";
-      options = {
-        desc = "Workspace Symbols";
       };
     }
     {
