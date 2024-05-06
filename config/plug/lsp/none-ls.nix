@@ -23,7 +23,7 @@
           '';
         };
         prettier = {
-          enable = false;
+          enable = true;
           disableTsServerFormatter = true;
           withArgs = ''
             {
