@@ -76,7 +76,7 @@
     {
       mode = "n";
       key = "gr";
-      action = "<cmd>Telescope lsp_references<CR>";
+      action = "<cmd>Lspsaga finder ref<CR>";
       options = {
         desc = "Goto References";
         silent = true;
