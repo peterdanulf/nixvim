@@ -95,6 +95,14 @@
     }
     {
       mode = "n";
+      key = "<leader>:";
+      action = "<CMD>Telescope command_history<CR>";
+      options = {
+        desc = "Command History";
+      };
+    }
+    {
+      mode = "n";
       key = "gr";
       action = "<CMD>Telescope lsp_references<CR>";
       options = {
