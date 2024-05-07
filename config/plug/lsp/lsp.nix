@@ -13,7 +13,7 @@
         pyright = {enable = true;};
         gopls = {enable = true;};
         terraformls = {enable = true;};
-        tsserver = {enable = true;};
+        tsserver = {enable = false;};
         yamlls = {enable = true;};
       };
       keymaps = {
