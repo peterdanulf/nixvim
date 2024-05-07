@@ -87,6 +87,14 @@
     }
     {
       mode = "n";
+      key = "gr";
+      action = "<CMD>Telescope lsp_references<CR>";
+      options = {
+        desc = "Goto References";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>tt";
       action = "<CMD> Grapple toggle <CR>";
       options = {desc = "Grapple Toggle tag";};

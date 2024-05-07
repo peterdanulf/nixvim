@@ -23,10 +23,6 @@
             action = "definition";
             desc = "Goto Definition";
           };
-          gr = {
-            action = "references";
-            desc = "Goto References";
-          };
           gD = {
             action = "declaration";
             desc = "Goto Declaration";
