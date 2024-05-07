@@ -87,6 +87,14 @@
     }
     {
       mode = "n";
+      key = "gs";
+      action = "<CMD>Telescope grep_string<CR>";
+      options = {
+        desc = "Grep string";
+      };
+    }
+    {
+      mode = "n";
       key = "gr";
       action = "<CMD>Telescope lsp_references<CR>";
       options = {
