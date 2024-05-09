@@ -14,6 +14,7 @@
         gopls = {enable = true;};
         terraformls = {enable = true;};
         tsserver = {enable = false;};
+        eslint = {enable = true;};
         yamlls = {enable = true;};
       };
       keymaps = {
