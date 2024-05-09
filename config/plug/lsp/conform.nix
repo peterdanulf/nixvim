@@ -10,10 +10,10 @@
       liquidsoap = ["liquidsoap-prettier"];
       html = [["biome" "prettier"]];
       css = [["biome" "prettier"]];
-      javascript = [["biome" "prettier"]];
-      javascriptreact = [["biome" "prettier"]];
-      typescript = [["biome" "prettier"]];
-      typescriptreact = [["biome" "prettier"]];
+      javascript = [["biome" "prettier" "eslint"]];
+      javascriptreact = [["biome" "prettier" "eslint"]];
+      typescript = [["biome" "prettier" "eslint"]];
+      typescriptreact = [["biome" "prettier" "eslint"]];
       python = ["black"];
       lua = ["stylua"];
       nix = ["alejandra"];
