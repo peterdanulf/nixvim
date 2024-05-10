@@ -66,7 +66,7 @@
       foldlevelstart = 99;
       foldenable = true;
 
-      # Always keep 8 lines above/below cursor unless at start/end of file
+      # Always keep cursor in center of screen unless at start/end of file
       scrolloff = 999;
 
       # Place a column line

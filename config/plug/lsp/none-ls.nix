@@ -24,6 +24,7 @@
         };
         prettier = {
           enable = true;
+          disableTsServerFormatter = true;
         };
         stylua.enable = true;
         yamlfmt.enable = true;

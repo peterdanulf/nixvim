@@ -46,6 +46,7 @@
     ./plug/ui/noice.nix
     ./plug/ui/nvim-notify.nix
     ./plug/ui/telescope.nix
+    ./plug/ui/neoscroll.nix
 
     ./plug/utils/copilot.nix
     ./plug/utils/flash.nix
