@@ -38,6 +38,7 @@
 
     #./plug/treesitter/treesitter-context.nix
     ./plug/treesitter/treesitter-textobjects.nix
+    ./plug/treesitter/rainbow-delimiters.nix
     ./plug/treesitter/treesitter.nix
 
     #./plug/ui/alpha.nix
