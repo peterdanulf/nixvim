@@ -13,7 +13,7 @@
         pyright = {enable = true;};
         gopls = {enable = true;};
         terraformls = {enable = true;};
-        tsserver = {enable = false;};
+        tsserver = {enable = true;};
         eslint = {enable = true;};
         yamlls = {enable = true;};
       };
