@@ -77,15 +77,6 @@
       };
     }
     {
-      mode = "i";
-      key = "jk";
-      action = "<ESC>";
-      options = {
-        silent = true;
-        desc = "jk to escape";
-      };
-    }
-    {
       mode = "n";
       key = "gs";
       action = "<CMD>Telescope grep_string<CR>";

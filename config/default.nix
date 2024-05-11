@@ -63,6 +63,7 @@
     ./plug/utils/surround.nix
     ./plug/utils/commentary.nix
     ./plug/utils/zen-mode.nix
+    ./plug/utils/better-escape.nix
     #./plug/utils/mini.nix
   ];
   options = {
