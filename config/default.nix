@@ -64,6 +64,7 @@
     ./plug/utils/commentary.nix
     ./plug/utils/zen-mode.nix
     ./plug/utils/better-escape.nix
+    ./plug/utils/auto-session.nix
     #./plug/utils/mini.nix
   ];
   options = {
