@@ -535,6 +535,22 @@
       options = {desc = "Delete to void register";};
     }
 
+    # Previous quickfix item
+    {
+      mode = "n";
+      key = "<[q>";
+      action = ":cprev<CR>";
+      options = {desc = "Previous quickfix item";};
+    }
+
+    # Next quickfix item
+    {
+      mode = "n";
+      key = "<]q>";
+      action = ":cnext<CR>";
+      options = {desc = "Next quickfix item";};
+    }
+
     # <C-c> instead of pressing esc just because
     {
       mode = "i";
