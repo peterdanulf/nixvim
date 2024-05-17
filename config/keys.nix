@@ -538,7 +538,7 @@
     # Previous quickfix item
     {
       mode = "n";
-      key = "<[q>";
+      key = "[q";
       action = ":cprev<CR>";
       options = {desc = "Previous quickfix item";};
     }
@@ -546,7 +546,7 @@
     # Next quickfix item
     {
       mode = "n";
-      key = "<]q>";
+      key = "]q";
       action = ":cnext<CR>";
       options = {desc = "Next quickfix item";};
     }
