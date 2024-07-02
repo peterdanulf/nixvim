@@ -78,6 +78,7 @@
     extraPlugins = with pkgs.vimPlugins; [
       nvim-spectre
       vim-startuptime
+      vim-wordpress
     ];
     extraConfigLua = ''
       _G.theme = "${config.theme}"
