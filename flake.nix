@@ -37,6 +37,12 @@
           module = ./config;
         };
       in {
+        # Allow unfree packages for nixvim and its dependencies
+        _module.args.pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+
         checks = {
           default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
             inherit nvim;

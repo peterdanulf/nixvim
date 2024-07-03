@@ -80,8 +80,6 @@
       vim-startuptime
     ];
 
-    allowUnfree = true;
-
     extraConfigLua = ''
       _G.theme = "${config.theme}"
     '';
