@@ -79,6 +79,12 @@
       nvim-spectre
       vim-startuptime
     ];
+
+    allowUnfreePredicate = pkg:
+      builtins.elem (lib.getName pkg) [
+        "intelephense"
+      ];
+
     extraConfigLua = ''
       _G.theme = "${config.theme}"
     '';
