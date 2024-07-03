@@ -80,10 +80,7 @@
       vim-startuptime
     ];
 
-    allowUnfreePredicate = pkg:
-      builtins.elem (lib.getName pkg) [
-        "intelephense"
-      ];
+    allowUnfree = true;
 
     extraConfigLua = ''
       _G.theme = "${config.theme}"
