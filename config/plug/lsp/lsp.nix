@@ -17,6 +17,7 @@
         eslint = {enable = true;};
         yamlls = {enable = true;};
         phpactor = {enable = true;};
+        intelliphense = {enable = true;};
       };
       keymaps = {
         silent = true;
