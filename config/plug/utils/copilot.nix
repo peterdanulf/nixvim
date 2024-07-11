@@ -25,13 +25,14 @@ in {
   extraConfigLua = ''
     local function apply_changes_to_buffer(response, start_line, end_line)
       print("DEBUG: Response object: " .. vim.inspect(response))
-      if response and response.text then
-        local lines = vim.split(response.text, "\n")
+
+      if response and response.choices and response.choices[1] and response.choices[1].message and response.choices[1].message.content then
+        local lines = vim.split(response.choices[1].message.content, "\n")
         vim.api.nvim_buf_set_lines(0, start_line, end_line + 1, false, lines)
         vim.notify("Changes applied successfully.", vim.log.levels.INFO)
       else
         vim.notify("Error: Unable to apply changes. Invalid response.", vim.log.levels.ERROR)
-        print("Invalid response detected.")
+        print("Invalid response detected: " .. vim.inspect(response))
       end
     end
 
