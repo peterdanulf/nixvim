@@ -30,39 +30,75 @@ in {
       prompts = {
         Explain = {
           prompt = 'Explain the selected code in detail.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Fix = {
           prompt = 'Fix any issues in the selected code.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Docs = {
           prompt = 'Generate documentation for the selected code.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Commit = {
           prompt = 'Write a commit message for the selected changes.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Optimize = {
           prompt = 'Optimize the selected code for better performance and readability.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Translate = {
           prompt = 'Translate the selected code to another programming language.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         GenerateTests = {
           prompt = 'Generate unit tests for the selected code.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Refactor = {
           prompt = 'Refactor the selected code to improve structure and maintainability.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         Debug = {
           prompt = 'Identify and fix bugs in the selected code.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         AddLogging = {
           prompt = 'Add logging statements to the selected code to help with debugging.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         SecurityReview = {
           prompt = 'Review the selected code for potential security vulnerabilities.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
         ExplainError = {
           prompt = 'Explain the error message related to the selected code.',
+          callback = function(response, source)
+            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
+          end,
         },
       },
     }
