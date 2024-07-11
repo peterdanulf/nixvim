@@ -23,17 +23,15 @@ in {
     })
   ];
   extraConfigLua = ''
-    local function apply_changes_to_buffer(response, source)
+    local function apply_changes_to_buffer(response, start_line, end_line)
       print("DEBUG: Response object: " .. vim.inspect(response))
-      print("DEBUG: Source object: " .. vim.inspect(source))
-
-      if response and response.text and source and source.range then
+      if response and response.text then
         local lines = vim.split(response.text, "\n")
-        vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, lines)
+        vim.api.nvim_buf_set_lines(0, start_line, end_line + 1, false, lines)
         vim.notify("Changes applied successfully.", vim.log.levels.INFO)
       else
-        vim.notify("Error: Unable to apply changes. Invalid range or response.", vim.log.levels.ERROR)
-        print("Invalid response or source detected.")
+        vim.notify("Error: Unable to apply changes. Invalid response.", vim.log.levels.ERROR)
+        print("Invalid response detected.")
       end
     end
 
@@ -44,51 +42,99 @@ in {
       prompts = {
         Explain = {
           prompt = 'Explain the selected code in detail.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Fix = {
           prompt = 'Fix any issues in the selected code.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Docs = {
           prompt = 'Generate documentation for the selected code.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Commit = {
           prompt = 'Write a commit message for the selected changes.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Optimize = {
           prompt = 'Optimize the selected code for better performance and readability.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Translate = {
           prompt = 'Translate the selected code to another programming language.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         GenerateTests = {
           prompt = 'Generate unit tests for the selected code.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Refactor = {
           prompt = 'Refactor the selected code to improve structure and maintainability.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         Debug = {
           prompt = 'Identify and fix bugs in the selected code.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         AddLogging = {
           prompt = 'Add logging statements to the selected code to help with debugging.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         SecurityReview = {
           prompt = 'Review the selected code for potential security vulnerabilities.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
         ExplainError = {
           prompt = 'Explain the error message related to the selected code.',
-          callback = apply_changes_to_buffer,
+          callback = function(response)
+            local start_line = vim.fn.line("'<") - 1
+            local end_line = vim.fn.line("'>") - 1
+            apply_changes_to_buffer(response, start_line, end_line)
+          end,
         },
       },
     }
