@@ -23,11 +23,21 @@ in {
     })
   ];
   extraConfigLua = ''
+    local function extract_code_block(response)
+      local start_pos = string.find(response, "```")
+      local end_pos = string.find(response, "```", start_pos + 3)
+      if start_pos and end_pos then
+        return string.sub(response, start_pos + 3, end_pos - 1)
+      end
+      return nil
+    end
+
     local function apply_changes_to_buffer(response, start_line, end_line)
       print("DEBUG: Response object: " .. vim.inspect(response))
 
-      if response and response.choices and response.choices[1] and response.choices[1].message and response.choices[1].message.content then
-        local lines = vim.split(response.choices[1].message.content, "\n")
+      local code_block = extract_code_block(response)
+      if code_block then
+        local lines = vim.split(code_block, "\n")
         vim.api.nvim_buf_set_lines(0, start_line, end_line + 1, false, lines)
         vim.notify("Changes applied successfully.", vim.log.levels.INFO)
       else
