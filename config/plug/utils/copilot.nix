@@ -24,14 +24,16 @@ in {
   ];
   extraConfigLua = ''
     local function apply_changes_to_buffer(response, source)
+      print("DEBUG: Response object: " .. vim.inspect(response))
+      print("DEBUG: Source object: " .. vim.inspect(source))
+
       if response and response.text and source and source.range then
         local lines = vim.split(response.text, "\n")
         vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, lines)
         vim.notify("Changes applied successfully.", vim.log.levels.INFO)
       else
         vim.notify("Error: Unable to apply changes. Invalid range or response.", vim.log.levels.ERROR)
-        print(vim.inspect(response))
-        print(vim.inspect(source))
+        print("Invalid response or source detected.")
       end
     end
 
