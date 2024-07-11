@@ -23,6 +23,14 @@ in {
     })
   ];
   extraConfigLua = ''
+    local function apply_changes_to_buffer(response, source)
+      if source and source.range and response and response.text then
+        vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, vim.split(response.text, "\n"))
+      else
+        vim.notify("Error: Unable to apply changes. Invalid range or response.", vim.log.levels.ERROR)
+      end
+    end
+
     require("CopilotChat").setup {
       model = 'gpt-4',
       debug = true,
@@ -30,75 +38,51 @@ in {
       prompts = {
         Explain = {
           prompt = 'Explain the selected code in detail.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Fix = {
           prompt = 'Fix any issues in the selected code.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Docs = {
           prompt = 'Generate documentation for the selected code.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Commit = {
           prompt = 'Write a commit message for the selected changes.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Optimize = {
           prompt = 'Optimize the selected code for better performance and readability.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Translate = {
           prompt = 'Translate the selected code to another programming language.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         GenerateTests = {
           prompt = 'Generate unit tests for the selected code.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Refactor = {
           prompt = 'Refactor the selected code to improve structure and maintainability.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         Debug = {
           prompt = 'Identify and fix bugs in the selected code.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         AddLogging = {
           prompt = 'Add logging statements to the selected code to help with debugging.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         SecurityReview = {
           prompt = 'Review the selected code for potential security vulnerabilities.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
         ExplainError = {
           prompt = 'Explain the error message related to the selected code.',
-          callback = function(response, source)
-            vim.api.nvim_buf_set_lines(0, source.range.start.line, source.range["end"].line + 1, false, response.text)
-          end,
+          callback = apply_changes_to_buffer,
         },
       },
     }
