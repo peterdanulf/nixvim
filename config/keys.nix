@@ -32,7 +32,12 @@
     {
       mode = "n";
       key = "<leader>z";
-      action = "+zen";
+      action = "Telescope zoxide list";
+    }
+    {
+      mode = "n";
+      key = "<leader>p";
+      action = "Telescope projects";
     }
     {
       mode = "n";
@@ -556,13 +561,6 @@
       mode = "i";
       key = "<C-c>";
       action = "<Esc>";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>zz";
-      action = "<CMD>ZenMode<CR>";
-      options = {desc = "Toggle writting mode";};
     }
   ];
   extraConfigLua = ''

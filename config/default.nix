@@ -64,6 +64,7 @@
     ./plug/utils/surround.nix
     ./plug/utils/commentary.nix
     ./plug/utils/zen-mode.nix
+    ./plug/utils/project.nix
     ./plug/utils/better-escape.nix
     ./plug/utils/auto-session.nix
     #./plug/utils/mini.nix
@@ -79,6 +80,7 @@
     extraPlugins = with pkgs.vimPlugins; [
       nvim-spectre
       vim-startuptime
+      telescope-zoxide
     ];
 
     extraConfigLua = ''
