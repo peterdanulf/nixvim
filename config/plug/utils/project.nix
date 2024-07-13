@@ -1,7 +1,7 @@
 {
   plugins.project-nvim = {
     enable = true;
-    showHidden = true;
+    showHidden = false;
     manualMode = false;
   };
 }
