@@ -30,44 +30,6 @@ in {
       window = {
         layout = 'vertical'
       },
-      prompts = {
-        Explain = {
-          prompt = 'Explain the selected code in detail.',
-        },
-        Fix = {
-          prompt = 'Fix any issues in the selected code.',
-        },
-        Docs = {
-          prompt = 'Generate documentation for the selected code.',
-        },
-        Commit = {
-          prompt = 'Write a commit message for the selected changes.',
-        },
-        Optimize = {
-          prompt = 'Optimize the selected code for better performance and readability.',
-        },
-        Translate = {
-          prompt = 'Translate the selected code to another programming language.',
-        },
-        GenerateTests = {
-          prompt = 'Generate unit tests for the selected code.',
-        },
-        Refactor = {
-          prompt = 'Refactor the selected code to improve structure and maintainability.',
-        },
-        Debug = {
-          prompt = 'Identify and fix bugs in the selected code.',
-        },
-        AddLogging = {
-          prompt = 'Add logging statements to the selected code to help with debugging.',
-        },
-        SecurityReview = {
-          prompt = 'Review the selected code for potential security vulnerabilities.',
-        },
-        ExplainError = {
-          prompt = 'Explain the error message related to the selected code.',
-        },
-      },
     }
   '';
 
@@ -136,6 +98,11 @@ in {
       mode = "x";
       key = "<leader>ax";
       action = "<cmd>CopilotChatExplainError<cr>";
+    }
+    {
+      mode = "x";
+      key = "<leader>ac";
+      action = "<cmd>CopilotChatChat<cr>";
     }
   ];
 }

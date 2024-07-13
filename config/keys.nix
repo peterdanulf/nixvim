@@ -32,12 +32,12 @@
     {
       mode = "n";
       key = "<leader>z";
-      action = "Telescope zoxide list";
+      action = "<cmd>Telescope zoxide list<CR>";
     }
     {
       mode = "n";
       key = "<leader>p";
-      action = "Telescope projects";
+      action = "<cmd>Telescope projects<CR>";
     }
     {
       mode = "n";
@@ -266,6 +266,38 @@
       action = "<cmd>Telescope git_status<cr>";
       options = {
         desc = "Git Explorer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gd";
+      action = "<cmd>Gvdiffsplit<cr>";
+      options = {
+        desc = "Git vdiffsplit";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gb";
+      action = "<cmd>G blame<cr>";
+      options = {
+        desc = "Git blame";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gs";
+      action = "<cmd>G<cr>";
+      options = {
+        desc = "Git status";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gl";
+      action = "<cmd>Gllog<cr>";
+      options = {
+        desc = "Git log";
       };
     }
     {
