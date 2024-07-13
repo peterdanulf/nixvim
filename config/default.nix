@@ -20,6 +20,7 @@
 
     ./plug/git/gitlinker.nix
     ./plug/git/gitsigns.nix
+    ./plug/git/fugitive.nix
     ./plug/git/lazygit.nix
     ./plug/git/worktree.nix
 
