@@ -102,7 +102,7 @@ in {
     {
       mode = "x";
       key = "<leader>ac";
-      action = "<cmd>CopilotChatChat<cr>";
+      action = "<cmd>CopilotChat<cr>";
     }
   ];
 }
