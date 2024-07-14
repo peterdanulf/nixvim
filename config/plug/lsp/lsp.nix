@@ -18,6 +18,7 @@
         yamlls = {enable = true;};
         phpactor = {enable = true;};
         intelephense = {enable = true;};
+        dartls = {enable = true;};
       };
       keymaps = {
         silent = true;
