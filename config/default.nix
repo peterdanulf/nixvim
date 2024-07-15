@@ -62,7 +62,7 @@
     ./plug/utils/whichkey.nix
     ./plug/utils/undotree.nix
     ./plug/utils/surround.nix
-    ./plug/utils/commentary.nix
+    ./plug/utils/comment.nix
     ./plug/utils/zen-mode.nix
     ./plug/utils/project.nix
     ./plug/utils/better-escape.nix
