@@ -4,13 +4,13 @@
   };
   plugins.copilot-lua = {
     enable = true;
-    suggestion = {enabled = false;};
+    suggestion = {enabled = true;};
     panel = {enabled = false;};
   };
 
   extraConfigLua = ''
     require("copilot").setup({
-      suggestion = { enabled = false },
+      suggestion = { enabled = true },
       panel = { enabled = false },
     })
   '';

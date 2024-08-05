@@ -14,6 +14,7 @@
 
     ./plug/filetrees/neo-tree.nix
 
+    ./plug/snippets/luasnip.nix
     ./plug/completion/cmp.nix
     ./plug/completion/copilot-cmp.nix
     ./plug/completion/lspkind.nix
@@ -31,8 +32,6 @@
     ./plug/lsp/lspsaga.nix
     ./plug/lsp/none-ls.nix
     ./plug/lsp/trouble.nix
-
-    ./plug/snippets/luasnip.nix
 
     ./plug/statusline/lualine.nix
     #./plug/statusline/staline.nix
