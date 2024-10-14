@@ -5,6 +5,7 @@
   ...
 }: {
   imports = [
+    ./autocommands.nix
     ./keys.nix
     ./sets.nix
     ./highlight.nix
