@@ -17,7 +17,7 @@
       pattern = [
         "markdown"
       ];
-      command = "setlocal spell spelllang=en,sv";
+      command = "setlocal spell spelllang=en,se";
     }
     # Hilight yank text
     {
