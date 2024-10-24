@@ -81,7 +81,7 @@
       nvim-spectre
       vim-startuptime
       telescope-zoxide
-      nvim-cheatsh
+      "siawkz/nvim-cheatsh"
     ];
 
     extraConfigLua = ''
